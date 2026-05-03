@@ -3,73 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untraced Privacy Policy</title>
+    <title>Privacy Policy — Untraced</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #333333;
+            background-color: #ffffff;
+            padding: 40px 24px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 24px 16px;
-            color: #333;
-            line-height: 1.6;
         }
-        h1 { font-size: 24px; margin-bottom: 4px; }
-        h2 { font-size: 18px; margin-top: 32px; }
-        .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
-        p { margin: 12px 0; }
-        ul { margin: 8px 0; padding-left: 24px; }
-        li { margin: 6px 0; }
+
+        header {
+            border-bottom: 3px solid #0F3460;
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        .app-name {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1976D2;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #0F3460;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #777777;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0F3460;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 10px 0 16px 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: #f0f4fa;
+            border-left: 4px solid #1976D2;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #0F3460;
+        }
+
+        .permission-block {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+        }
+
+        .permission-name {
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+            color: #0F3460;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #777777;
+        }
+
+        a { color: #1976D2; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for Untraced</h1>
-    <p class="updated">Last updated: April 2, 2026</p>
 
-    <p>G Bar G Apps LLC. ("we," "our," or "us") operates the Untraced mobile application (the "App"). This Privacy Policy explains how we handle information when you use our App.</p>
+<header>
+    <div class="app-name">Untraced</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated: May 3, 2026 &nbsp;&middot;&nbsp; Effective immediately upon use</div>
+</header>
 
-    <h2>1. Information We Do Not Collect</h2>
-    <p>Untraced is designed to operate entirely on your device. We do not collect, store, transmit, or share any personal information about you or your device. Specifically:</p>
-    <ul>
-        <li>We do not collect your name, email address, or any contact information</li>
-        <li>We do not collect your location data</li>
-        <li>We do not collect information about the apps installed on your device</li>
-        <li>We do not transmit any data from your device to our servers</li>
-        <li>We do not use analytics, advertising SDKs, or tracking tools of any kind</li>
-        <li>We do not create user accounts or profiles</li>
-    </ul>
+<div class="highlight-box">
+    <p>Untraced collects no personal data. All scanning and analysis happens entirely on your device. Nothing is ever transmitted to us or any third party.</p>
+</div>
 
-    <h2>2. How the App Works</h2>
-    <p>Untraced scans your device locally to identify which apps have been granted location permissions and provides an on-device risk assessment based on publicly available information. All scanning, analysis, and storage of results occurs entirely on your device and never leaves it.</p>
+<h2>1. Information We Do Not Collect</h2>
+<p>G Bar G Apps LLC does not collect, store, transmit, or share any personal information through Untraced. Specifically:</p>
+<ul>
+    <li>We do not collect your name, email address, or any contact information</li>
+    <li>We do not collect your location data</li>
+    <li>We do not collect information about the apps installed on your device</li>
+    <li>We do not transmit any data from your device to our servers</li>
+    <li>We do not use analytics, advertising SDKs, or tracking tools of any kind</li>
+    <li>We do not create user accounts or profiles</li>
+</ul>
 
-    <h2>3. Permissions We Request</h2>
-    <p>Untraced requests the following Android permissions to provide its core functionality:</p>
-    <ul>
-        <li><strong>QUERY_ALL_PACKAGES</strong> — required to scan installed apps and their declared permissions. This data is processed locally on your device and never transmitted.</li>
-        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — required to reschedule background scans after your device restarts.</li>
-        <li><strong>POST_NOTIFICATIONS</strong> — required to notify you when a background scan detects permission changes.</li>
-        <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> — requested to ensure background scans run reliably.</li>
-        <li><strong>INTERNET</strong> — required to fetch updated risk database information from our public GitHub repository.</li>
-        <li><strong>ACCESS_NETWORK_STATE</strong> — required to check network availability before attempting to fetch updates.</li>
-    </ul>
+<h2>2. How the App Works</h2>
+<p>Untraced scans your device locally to identify which apps have been granted location, microphone, and camera permissions. For each app, Untraced assesses permission type and access mode and provides a qualified risk indicator based on a curated on-device profile database.</p>
+<p>All scanning, analysis, and storage of results occurs entirely on your device and never leaves it. Untraced has no server-side component and no user accounts.</p>
 
-    <h2>4. Risk Database</h2>
-    <p>Untraced periodically fetches an updated risk reference database from a publicly accessible file hosted on GitHub. This fetch does not transmit any information about you or your device. The request contains no personally identifiable information.</p>
+<h2>3. Permissions We Request</h2>
+<p>Untraced requests the following Android permissions to provide its core functionality:</p>
 
-    <h2>5. Data Storage</h2>
-    <p>All scan results, permission history, and app settings are stored locally on your device using Android's built-in database storage. This data never leaves your device and is deleted when you uninstall the App or use the Clear Scan History feature within the App.</p>
+<div class="permission-block">
+    <span class="permission-name">QUERY_ALL_PACKAGES</span>
+    Required to scan installed apps and their declared permissions. This data is processed locally on your device and never transmitted.
+</div>
 
-    <h2>6. Children's Privacy</h2>
-    <p>Untraced does not knowingly collect any information from children under the age of 13. The App does not collect personal information from any users regardless of age.</p>
+<div class="permission-block">
+    <span class="permission-name">RECEIVE_BOOT_COMPLETED</span>
+    Required to reschedule background scans after your device restarts.
+</div>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the Last Updated date at the top of this policy. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+<div class="permission-block">
+    <span class="permission-name">POST_NOTIFICATIONS</span>
+    Required to notify you when a background scan detects permission changes.
+</div>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:</p>
-    <p>
-        <strong>G Bar G Apps LLC.</strong><br>
-        United States<br>
-        <strong>gbargapps@gmail.com</strong>
-    </p>
+<div class="permission-block">
+    <span class="permission-name">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span>
+    Requested to ensure background scans run reliably without being interrupted by Android battery management.
+</div>
+
+<div class="permission-block">
+    <span class="permission-name">INTERNET</span>
+    Required to fetch updated risk database information from our public GitHub repository. This request contains no personally identifiable information and transmits no data about you or your device.
+</div>
+
+<div class="permission-block">
+    <span class="permission-name">ACCESS_NETWORK_STATE</span>
+    Required to check network availability before attempting to fetch risk database updates.
+</div>
+
+<h2>4. What Untraced Scans</h2>
+<p>Untraced audits three categories of sensitive permissions across all apps installed on your device:</p>
+<ul>
+    <li><strong>Location permissions</strong> — identifies apps with access to your precise or approximate location, including background (always-on) access</li>
+    <li><strong>Microphone permissions</strong> — identifies apps with access to your device microphone, including background access via foreground services</li>
+    <li><strong>Camera permissions</strong> — identifies apps with access to your device camera, including background access via foreground services</li>
+</ul>
+<p>All permission data is read locally from Android's PackageManager API and is never transmitted off your device.</p>
+
+<h2>5. Risk Database</h2>
+<p>Untraced periodically fetches an updated risk reference database from a publicly accessible file hosted on GitHub. This fetch does not transmit any information about you or your device. The request contains no personally identifiable information and is used solely to keep the app's assessment profiles current.</p>
+
+<h2>6. Data Storage</h2>
+<p>All scan results, permission history, and app settings are stored locally on your device using Android's built-in database storage. This data never leaves your device and is deleted when you uninstall the App or use the Clear Scan History feature within the App.</p>
+
+<h2>7. Pro Features and Purchases</h2>
+<p>Untraced offers an optional Pro tier available through the Google Play Store. Purchase and subscription management is handled entirely by Google Play. We do not receive or store any payment information. For information on how Google handles purchase data, please refer to Google's Privacy Policy.</p>
+
+<h2>8. Children's Privacy</h2>
+<p>Untraced does not knowingly collect any information from children under the age of 13. The App does not collect personal information from any users regardless of age.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the Last Updated date at the top of this policy. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+
+<h2>10. Contact Us</h2>
+<p>If you have questions about this Privacy Policy, please contact us at:</p>
+<p>
+    <strong>G Bar G Apps LLC</strong><br>
+    United States<br>
+    <a href="mailto:gbargapps@gmail.com">gbargapps@gmail.com</a>
+</p>
+
+<footer>
+    &copy; 2026 G Bar G Apps LLC &nbsp;&middot;&nbsp; <a href="https://untraced.app">untraced.app</a>
+</footer>
+
 </body>
 </html>
